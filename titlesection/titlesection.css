@@ -1,20 +1,33 @@
-H1 {
+:root {
 
-    Color:blue;
-    
-    }
-    
-    Button:hover {
-        background-color: red;
-        cursor: pointer;
-        font-size: 20px; 
-    }
-    
-    #title {
+    --titleSectionPrimaryColor: blue;
+
+}
+
+#title {
         
        
         text-align: center;
         padding-top: 200px;
         background-image: url(../images/pascal-bullan-HmO-jGKk3wI-unsplash.jpg) ;
         background-position: center center;
+        Color: var(--titleSectionPrimaryColor);
+    
     }
+
+    .title-section-button {
+        Color: var(--titleSectionPrimaryColor);
+        border: solid var(--titleSectionPrimaryColor) 1px;
+        border-radius: 5px ;
+        padding: 15px 20x;
+        background-color: transparent;
+    }
+    
+    .title-section-button:hover {
+        background-color: red;
+        cursor: pointer;
+       
+    }
+    
+    
+    
