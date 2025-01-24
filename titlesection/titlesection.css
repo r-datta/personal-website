@@ -12,9 +12,9 @@ H1 {
     
     #title {
         
-        width:100vw;
-        height:100vh;
+       
         text-align: center;
         padding-top: 200px;
-    
+        background-image: url(../images/pascal-bullan-HmO-jGKk3wI-unsplash.jpg) ;
+        background-position: center center;
     }
