@@ -43,6 +43,17 @@
 	<div class="main-section" id="craps-game">
 		<h1 class="craps-game-title"> Craps Casino Game</h1>
 	<div class="craps-game-container">
+		<div class="craps-registration-pane">
+			<div>
+				Enter username to begin
+			</div>
+			<div>
+				<input class="craps-registration-input" id="craps-username-input">
+			</div>
+			<div class="craps-registration-continue" onclick="registerCrapsplayer()">
+				Continue
+			</div>
+		</div>
 
 
 		</div>
@@ -104,6 +115,11 @@ function sillygoose() {
 	document.body.style.background = 'url("https://i.imgflip.com/4mj4kl.gif")';
 
 	document.getElementById("title").style.visibility = "hidden";
+}
+
+function registerCrapsplayer () {
+	let crapsUsername = document.getElementById("craps-username-input").value
+
 }
 
 </script>
