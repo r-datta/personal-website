@@ -20,3 +20,40 @@
     
 
 }
+
+#craps-registration-pane {
+
+    text-align: center;
+    margin-top: 25px;
+}
+
+.craps-registration-input{
+    background: none;
+    border: white 2px;
+    border-bottom: solid white 5px;
+    margin-top: 25px;
+    color: white;
+    text-align: center;
+
+}
+
+.craps-registration-input:focus {
+
+    outline-width: 0;
+}
+
+.craps-registration-continue {
+
+    margin-top: 25px;
+}
+
+.craps-registration-continue:hover {
+
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#craps-main-section {
+
+    display: none;
+}
