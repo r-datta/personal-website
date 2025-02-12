@@ -1,13 +1,22 @@
+// Craps main data 
+let crapsUsername = ""
+
+// craps game setting
+const startingMoney = 1000
+const startingRounds = 0
 
 // HTML ELEMENT IDs    
 
 const crapsUsernameInput = "craps-username-input"
 const crapsRegistrationPane = "craps-registration-pane"
 const crapsMainSection = "craps-main-section"
+const crapsStatsUsername = "craps-stats-username"
+const crapsStatsMoney = "craps-stats-money"
+const crapsStatsRounds = "craps-stats-rounds"
 
 
 function registerCrapsplayer () {
-	let crapsUsername = document.getElementById("craps-username-input").value
+	crapsUsername = document.getElementById("craps-username-input").value
 
     let firstCharisDigitRegex = /^[0-9]|[^a-zA-Z0-9_]/g
     
@@ -21,6 +30,7 @@ function registerCrapsplayer () {
 
     removeRegistrationPane()
     showMainGameSection()
+    setupFirstRound ()
     } 
 }
 
@@ -33,4 +43,18 @@ function removeRegistrationPane () {
 function showMainGameSection () {
     document.getElementById("craps-main-section").style.display = "block"
 
+}
+
+function setupFirstRound () {
+    document.getElementById(crapsStatsUsername).innerHTML = crapsUsername
+    setMoney(startingMoney)
+    setRounds (startingRounds)
+}
+
+function setMoney (money) {
+    document.getElementById(crapsStatsMoney).innerHTML = money
+}
+
+function setRounds (rounds) {
+    document.getElementById(crapsStatsRounds).innerHTML = rounds
 }
