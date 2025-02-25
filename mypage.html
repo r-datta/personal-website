@@ -2,6 +2,7 @@
 	<head>
 		<link rel="stylesheet" href="./titlesection/titlesection.css">
 		<link rel="stylesheet" href="./aboutmesection/aboutmesection.css">
+		<link rel="stylesheet" href="./crapsgame/crapsgame.css">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
@@ -39,7 +40,40 @@
 			<i class="aboutme-icon fa-solid fa-envelope"></i></a>
 		<a><i class="aboutme-icon fa-brands fa-square-instagram"></i></a>
 	</div>
-	
+	<div class="main-section" id="craps-game">
+		<h1 class="craps-game-title"> Craps Casino Game</h1>
+	<div class="craps-game-container">
+		<div id="craps-registration-pane">
+			<div>
+				Enter username to begin
+			</div>
+			<div>
+				<input class="craps-registration-input" id="craps-username-input">
+			</div>
+			<div class="craps-registration-continue" onclick="registerCrapsplayer()">
+				Continue
+			</div>
+		</div>
+		<div id="craps-main-section">
+			<div class="craps-main-section-stats"">
+				<div>
+					Welcome, <span id="craps-stats-username">User</span>
+				</div>
+				<div id="craps-stats-money-container">
+					$<span id="craps-stats-money"></span>
+				</div>
+				<div>
+					Rounds: <span id="craps-stats-rounds"></span>
+				</div>
+
+
+		</div>
+		</div>
+
+		</div>
+	</div>
+
+</div>
 
 	</div>
 	
@@ -88,6 +122,7 @@ html, body {
 
 </style>
 
+<script src="./crapsgame/crapsgame.js"></script>
 <script>
 
 function sillygoose() {
@@ -96,5 +131,7 @@ function sillygoose() {
 
 	document.getElementById("title").style.visibility = "hidden";
 }
+
+
 
 </script>
